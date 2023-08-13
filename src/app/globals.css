@@ -16,12 +16,10 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.outline-button {
+  @apply text-black bg-white outline-none rounded-full px-8 py-2 text-xl font-[600] hover:bg-gray-300;
+}
+
+.bg-button {
+  @apply text-white bg-black outline-none rounded-full px-8 py-2 text-xl font-[600] hover:bg-gray-900;
 }
